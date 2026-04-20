@@ -119,7 +119,7 @@ export default function Home() {
   )
 
   return (
-    <div style={{ minHeight: '100vh', background: '#FFFAF5', fontFamily: 'system-ui, sans-serif', padding: '32px 16px 64px', maxWidth: '860px', margin: '0 auto', position: 'relative' }}>
+    <div style={{ minHeight: '100vh', background: '#FFFAF5', fontFamily: 'system-ui, sans-serif', padding: '32px 16px 64px', maxWidth: '1100px', margin: '0 auto', position: 'relative' }}>
 
       {toast && (
         <div style={{ position: 'fixed', top: '24px', left: '50%', transform: 'translateX(-50%)', background: '#6DB87A', color: '#fff', padding: '8px 20px', borderRadius: '99px', fontSize: '13px', fontWeight: 600, zIndex: 100 }}>
