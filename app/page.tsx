@@ -119,7 +119,7 @@ export default function Home() {
   )
 
   return (
-    <div style={{ minHeight: '100vh', background: '#FFFAF5', fontFamily: 'system-ui, sans-serif', padding: '32px 16px 64px', maxWidth: '640px', margin: '0 auto', position: 'relative' }}>
+    <div style={{ minHeight: '100vh', background: '#FFFAF5', fontFamily: 'system-ui, sans-serif', padding: '32px 16px 64px', maxWidth: '860px', margin: '0 auto', position: 'relative' }}>
 
       {toast && (
         <div style={{ position: 'fixed', top: '24px', left: '50%', transform: 'translateX(-50%)', background: '#6DB87A', color: '#fff', padding: '8px 20px', borderRadius: '99px', fontSize: '13px', fontWeight: 600, zIndex: 100 }}>
@@ -135,7 +135,7 @@ export default function Home() {
       </div>
 
       {/* stat cards */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '10px', marginBottom: '20px' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, minmax(80px, 1fr))', gap: '10px', marginBottom: '20px' }}>
         {statCards.map(s => (
           <div key={s.key} style={{ background: s.bg, borderRadius: '14px', padding: '14px 10px', textAlign: 'center', border: `1.5px solid ${s.border}` }}>
             <div style={{ fontSize: '22px', fontWeight: 700, color: s.text }}>{statValues[s.key]}</div>
@@ -203,7 +203,7 @@ export default function Home() {
               </span>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: '6px', marginBottom: unlocked ? '12px' : '0' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, minmax(36px, 1fr))', gap: '6px', marginBottom: unlocked ? '12px' : '0' }}>
               {DAYS.map((day, d) => {
                 const checked = !!checks[`w${w}d${d}`]
                 return (
