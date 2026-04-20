@@ -176,6 +176,7 @@ export default function Home() {
       </div>
 
       {/* week cards */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(480px, 1fr))', gap: '12px' }}>
       {Array.from({ length: 11 }, (_, w) => {
         const unlocked = isUnlocked(w)
         const phase = phaseOf(w)
